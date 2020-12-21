@@ -1,4 +1,7 @@
-/* self host material design icon */
-/* https://github.com/jossef/material-design-icons-iconfont */
+// self host material design icon
+// https://github.com/jossef/material-design-icons-iconfont
 $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/';
 @import '~material-design-icons-iconfont/src/material-design-icons';
+
+// self host material fonts
+@import './asserts/fonts/fonts.scss';
