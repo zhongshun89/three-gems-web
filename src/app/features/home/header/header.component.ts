@@ -2,7 +2,7 @@ import { Component, OnInit, HostListener, HostBinding, Inject } from '@angular/c
 import { DOCUMENT } from '@angular/common';
 
 @Component({
-  selector: 'app-header',
+  selector: 'home-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
