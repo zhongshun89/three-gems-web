@@ -8,4 +8,4 @@ $default-success: mat-palette($mat-green);
   @return map-merge(mat-light-theme($primary, $accent, $warn), (success: $success));
 }
 
-$default-theme: mat-light-theme($default-primary, $default-accent,$default-success, $default-warn);
+$default-theme: my-light-theme($default-primary, $default-accent, $default-success, $default-warn);

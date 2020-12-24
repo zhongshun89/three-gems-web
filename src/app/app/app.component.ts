@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { RouterOutlet } from '@angular/router';
 
-import { routeTransAnimation } from './app-animations';
+import { routeTransAnimation } from './app.animations';
 
 @Component({
   selector: 'app-root',
