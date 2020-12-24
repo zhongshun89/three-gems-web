@@ -4,16 +4,12 @@ import { SharedModule } from '../../shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,

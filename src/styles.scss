@@ -1,19 +1,15 @@
-// self host material design icon, https://github.com/jossef/material-design-icons-iconfont
+/* self host material design icon, https://github.com/jossef/material-design-icons-iconfont */
 $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/';
 @import '~material-design-icons-iconfont/src/material-design-icons';
 
-// self host material fonts
+/* self host material fonts */
 @import 'assets/fonts/fonts.scss';
 
-// 
+/* */
 @import 'styles-variables';
 
 
-// themes
-
-// default theme
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+/* themes */
 @import '~@angular/material/theming';
 
 @include mat-core();
@@ -22,22 +18,25 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @import './themes/light-theme';
 @import './themes/dark-theme';
 
-@import './app/features/home/header/header.component.scss-theme';
+@import './app/app.component.scss-theme';
 
 
 @mixin custom-components-theme($theme) {
-  @include home-header-component-theme($theme);
+  @include app-component-theme($theme);
 }
+
 
 .default-theme {
   @include angular-material-color($default-theme);
   @include custom-components-theme($default-theme);
 }
 
+
 .light-theme {
   @include angular-material-color($light-theme);
   @include custom-components-theme($light-theme);
 }
+
 
 .dark-theme {
   @include angular-material-color($dark-theme);

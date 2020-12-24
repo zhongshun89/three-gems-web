@@ -9,6 +9,9 @@ const routes: Routes = [
   },
   {
     path: 'home',
+    data: {
+      animation: 'home'
+    },
     loadChildren: () =>
       import('./features/home/home.module').then((m) => m.HomeModule)
   },

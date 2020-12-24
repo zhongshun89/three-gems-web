@@ -1,9 +1,16 @@
 $dark-primary: mat-palette($mat-grey, 700, 300, 900);
 $dark-accent: mat-palette($mat-blue-grey, 400);
 $dark-warn: mat-palette($mat-red, 500);
+$dark-success: mat-palette($mat-green);
 
-$dark-theme: mat-dark-theme(
-  $dark-primary,
-  $dark-accent,
-  $dark-warn
+/* https://dev.to/martinmcwhorter/extending-angular-material-theme-system-n50 */
+@function my-dark-theme($primary, $accent, $success, $warn: mat-palette($mat-red)) {
+  @return map-merge(mat-dark-theme($primary, $accent, $warn), (success: $success))
+}
+
+$dark-theme: my-dark-theme(
+    $dark-primary,
+    $dark-accent,
+    $dark-success,
+    $dark-warn
 );
