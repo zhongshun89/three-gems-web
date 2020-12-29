@@ -1,0 +1,21 @@
+.footer {
+  background-color: #212121;
+}
+
+.lg-main-padding {
+  padding: 30px var(--lg-main-padding);
+}
+
+p {
+  color: white;
+}
+
+.info-box {
+  padding: 30px;
+  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.divider {
+  border-top-color: white !important;
+  margin: 0 30px;
+}

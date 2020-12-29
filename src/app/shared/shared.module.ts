@@ -25,6 +25,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDividerModule } from '@angular/material/divider';
+
 
 @NgModule({
   imports: [
@@ -55,7 +57,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatBottomSheetModule,
     MatSlideToggleModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSidenavModule,
+    MatDividerModule
   ],
   declarations: [
 
@@ -88,7 +92,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatBottomSheetModule,
     MatSlideToggleModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDividerModule
   ]
 })
 export class SharedModule {}

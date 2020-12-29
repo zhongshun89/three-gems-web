@@ -1,33 +1,19 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav mode="push">
-    <div class="branding">
-      <img src="assets/images/logo.png" alt="logo"/>
-      <span>Angular</span>
-    </div>
-    <mat-nav-list>
-      <a mat-list-item *ngFor="let item of navigation" (click)="sidenav.close()" [routerLink]="[item.link]"
-        routerLinkActive="active">
-        {{item.label}}
-      </a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <div class="toolbar">
-    <mat-toolbar color="primary">
-      <button mat-icon-button class="d-md-none" (click)="sidenav.open()">
-        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-      </button>
-
-      <span routerLink="" class="branding spacer center d-inline d-sm-none">
-        <img src="assets/images/logo.png" alt="logo"/>
-        Angular
-      </span>
-
-      <span class="d-none d-md-inline">
-        <button mat-button class="nav-button" *ngFor="let item of navigation" [routerLink]="[item.link]"
-          routerLinkActive="active">
-          {{item.label}}
-        </button>
-      </span>
-    </mat-toolbar>
-  </div>
-</mat-sidenav-container>
+<mat-toolbar color="primary" class="header">
+  <span>SmartToliets</span>
+  <span class="spacer"></span>
+  <button mat-button>
+    About
+  </button>
+  <button mat-button>
+    Services
+  </button>
+  <button mat-button>
+    Works
+  </button>
+  <button mat-button>
+    Devices
+  </button>
+  <button mat-button>
+    Contact
+  </button>
+</mat-toolbar>

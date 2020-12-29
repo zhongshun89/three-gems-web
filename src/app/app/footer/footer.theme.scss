@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@mixin app-footer-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $success: map-get($theme, success);
+
+  .mat-title {
+    color: mat-color($accent);
+  }
+}

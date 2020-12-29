@@ -1,19 +1,19 @@
-@import '../../styles-variables';
+// @import '../../styles-variables';
 
 
-.container {
-  height: 100%;
-  width: 100%;
+// .container {
+//   height: 100%;
+//   width: 100%;
   
-  .content {
-    flex: 1 0 auto;
-    margin-top: 64px;
-    overflow: hidden;
-  }
+//   .content {
+//     flex: 1 0 auto;
+//     margin-top: 64px;
+//     overflow: hidden;
+//   }
 
-  @media (max-width: map-get($grid-breakpoints, sm)) {
-    .content {
-      margin-top: 56px !important;
-    }
-  }
-}
+//   @media (max-width: map-get($grid-breakpoints, sm)) {
+//     .content {
+//       margin-top: 56px !important;
+//     }
+//   }
+// }

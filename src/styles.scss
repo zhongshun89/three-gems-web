@@ -3,7 +3,7 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @import '~material-design-icons-iconfont/src/material-design-icons';
 
 /* self host material fonts */
-@import 'assets/fonts/fonts.scss';
+@import 'assets/fonts/fonts';
 
 /* */
 @import 'styles-variables';
@@ -18,27 +18,27 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @import './themes/light-theme';
 @import './themes/dark-theme';
 
-@import './app/app/header/header.theme';
+@import './app/app/footer/footer.theme';
 
 
 @mixin custom-components-theme($theme) {
-  @include app-header-theme($theme);
+  @include app-footer-theme($theme);
 }
 
 
 .default-theme {
-  @include angular-material-color($default-theme);
+  @include angular-material-theme($default-theme);
   @include custom-components-theme($default-theme);
 }
 
 
 .light-theme {
-  @include angular-material-color($light-theme);
+  @include angular-material-theme($light-theme);
   @include custom-components-theme($light-theme);
 }
 
 
 .dark-theme {
-  @include angular-material-color($dark-theme);
+  @include angular-material-theme($dark-theme);
   @include custom-components-theme($dark-theme);
 }
