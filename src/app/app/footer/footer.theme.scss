@@ -7,6 +7,6 @@
   $success: map-get($theme, success);
 
   a {
-    color: mat-color($accent)
+    color: mat-color($success)
   }
 }

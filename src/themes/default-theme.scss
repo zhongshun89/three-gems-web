@@ -1,7 +1,7 @@
 $default-primary: mat-palette($mat-indigo);
 $default-accent: mat-palette($mat-pink, A200, A100, A400);
 $default-warn: mat-palette($mat-pink, 600);
-$default-success: mat-palette($mat-green);
+$default-success: mat-palette($mat-yellow, A400);
 
 @function my-light-theme($primary, $accent, $success, $warn: mat-palette($mat-red)) {
   @return map-merge(mat-light-theme($primary, $accent, $warn), (success: $success));

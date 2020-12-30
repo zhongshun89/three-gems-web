@@ -6,6 +6,11 @@
   padding: 30px;
 }
 
+.footer .info-row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .footer p {
   color: white;
   margin: 0;
@@ -17,10 +22,6 @@
 
 .footer a {
   text-decoration: none;
-}
-
-.lg-main-padding {
-  padding: 30px var(--lg-main-padding);
 }
 
 .divider {

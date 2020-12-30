@@ -15,7 +15,6 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @include mat-core();
 
 @import './themes/default-theme';
-@import './themes/light-theme';
 @import './themes/dark-theme';
 
 @import './app/app/footer/footer.theme';
@@ -25,18 +24,14 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
   @include app-footer-theme($theme);
 }
 
+.lg-main-padding {
+  padding: 30px var(--lg-main-padding) !important;
+}
 
 .default-theme {
   @include angular-material-theme($default-theme);
   @include custom-components-theme($default-theme);
 }
-
-
-.light-theme {
-  @include angular-material-theme($light-theme);
-  @include custom-components-theme($light-theme);
-}
-
 
 .dark-theme {
   @include angular-material-theme($dark-theme);

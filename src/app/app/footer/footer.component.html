@@ -6,7 +6,7 @@
   ngClass.gt-lg="lg-main-padding">
 
   <div fxFlex.gt-lg="1 1 31%">
-    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px" class="info-box">
+    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px" ngClass.lt-md="info-box" ngClass.gt-lg="info-row">
       <p gdArea="title" class="mat-headline">
         <b>About Us</b>
       </p>
@@ -18,9 +18,11 @@
       </p>
     </div>
   </div>
-  <mat-divider fxShow="false" fxShow.lt-lg="true" class="divider"></mat-divider>
+
+  <mat-divider fxShow.gt-lg="false" class="divider"></mat-divider>
+  
   <div fxFlex.gt-lg="1 1 32%">
-    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px" class="info-box">
+    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px" ngClass.lt-md="info-box" ngClass.gt-lg="info-row">
       <p gdArea="title" class="mat-headline">
         <b>Contact Us</b>
       </p>
@@ -40,9 +42,11 @@
       </div>
     </div>
   </div>
-  <mat-divider fxShow="false" fxShow.lt-lg="true" class="divider"></mat-divider>
-  <div fxFlex.gt-lg="1 1 31%">
-    <div gdAreas="title | content" gdRows="auto auto" gdGap="20px" class="info-box">
+  
+  <mat-divider fxShow.gt-lg="false" class="divider"></mat-divider>
+  
+  <div fxFlex.gt-lg="1 1 31%" fxFlex.lt-md="247px">
+    <div gdAreas="title | content" gdRows="auto auto" gdGap="20px" ngClass.lt-md="info-box" ngClass.gt-lg="info-row">
       <p gdArea="title" class="mat-headline">
         <b>Quick Links</b>
       </p>

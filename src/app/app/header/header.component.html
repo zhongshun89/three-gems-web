@@ -1,19 +1,43 @@
-<mat-toolbar color="primary" class="header">
-  <span>SmartToliets</span>
+<mat-toolbar color="primary" ngClass.gt-lg="lg-main-padding" [class.mat-elevation-z24]="true">
+  <p class="mat-headline">
+    SmartToilets
+  </p>
   <span class="spacer"></span>
-  <button mat-button>
+  <button fxShow.gt-lg="false" mat-icon-button (click)="toggleSlideMenu()"> 
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div fxShow.lt-md="false">
+    <button mat-button>
+      About
+    </button>
+    <button mat-button>
+      Services
+    </button>
+    <button mat-button>
+      Works
+    </button>
+    <button mat-button>
+      Devices
+    </button>
+    <button mat-button>
+      Contact
+    </button>  
+  </div>
+</mat-toolbar>
+<div [@slideInOut]="menuState" gdRows="auto auto auto auto auto" gdGap="10px" fxShow.gt-lg="false" class="menu">
+  <button mat-button color="primary" >
     About
   </button>
-  <button mat-button>
+  <button mat-button color="primary">
     Services
   </button>
-  <button mat-button>
+  <button mat-button color="primary">
     Works
   </button>
-  <button mat-button>
+  <button mat-button color="primary">
     Devices
   </button>
-  <button mat-button>
+  <button mat-button color="primary">
     Contact
-  </button>
-</mat-toolbar>
+  </button>  
+</div>

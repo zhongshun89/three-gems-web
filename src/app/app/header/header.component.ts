@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { SlideInOutAnimation } from './header.animations';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  animations: [SlideInOutAnimation]
 })
 export class HeaderComponent implements OnInit {
   languages = ['en', 'zh-cn', 'tw'];
@@ -14,9 +16,16 @@ export class HeaderComponent implements OnInit {
     { link: 'customers', label: 'customers' }
   ];
 
+  menuState = 'out'
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
+  toggleSlideMenu() {
+    console.log(this.menuState);
+    this.menuState = this.menuState === 'out' ? 'in' : 'out';
+  }
 }

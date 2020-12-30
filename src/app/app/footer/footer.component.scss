@@ -5,6 +5,11 @@
     padding: 30px;
   }
 
+  .info-row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   p {
     color: white;
     margin: 0;
@@ -16,10 +21,6 @@
   a {
     text-decoration: none;
   }
-}
-
-.lg-main-padding {
-  padding: 30px var(--lg-main-padding);
 }
 
 .divider {
