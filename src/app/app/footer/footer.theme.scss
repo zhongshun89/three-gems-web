@@ -6,7 +6,7 @@
   $warn: map-get($theme, warn);
   $success: map-get($theme, success);
 
-  .mat-title {
-    color: mat-color($accent);
+  a {
+    color: mat-color($accent)
   }
 }

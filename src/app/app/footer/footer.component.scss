@@ -1,21 +1,28 @@
 .footer {
   background-color: #212121;
+  
+  .info-box {
+    padding: 30px;
+  }
+
+  p {
+    color: white;
+    margin: 0;
+    > b {
+      color: #ffc107;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
 }
 
 .lg-main-padding {
   padding: 30px var(--lg-main-padding);
 }
 
-p {
-  color: white;
-}
-
-.info-box {
-  padding: 30px;
-  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.2);
-}
-
 .divider {
-  border-top-color: white !important;
+  border-top-color: rgb(76, 68, 68) !important;
   margin: 0 30px;
 }

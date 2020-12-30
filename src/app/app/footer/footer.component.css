@@ -2,20 +2,28 @@
   background-color: #212121;
 }
 
+.footer .info-box {
+  padding: 30px;
+}
+
+.footer p {
+  color: white;
+  margin: 0;
+}
+
+.footer p > b {
+  color: #ffc107;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
 .lg-main-padding {
   padding: 30px var(--lg-main-padding);
 }
 
-p {
-  color: white;
-}
-
-.info-box {
-  padding: 30px;
-  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.2);
-}
-
 .divider {
-  border-top-color: white !important;
+  border-top-color: #4c4444 !important;
   margin: 0 30px;
 }
