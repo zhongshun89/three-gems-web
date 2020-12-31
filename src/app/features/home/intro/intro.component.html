@@ -1,0 +1,51 @@
+<section 
+  fxLayout="row"
+  fxLayout.lt-md="column"
+  fxLayoutWrap="nowrap"
+  fxLayoutGap="30px"
+  class="section"
+  ngClass.gt-lg="lg-main-padding">
+  <div class="container">
+    <div 
+    fxFlex="50%"
+    gdAreas="title | desc | features | action"
+    gdRows="auto auto auto auto"
+    gdGap="30px">
+
+      <p gdArea="title" class="mat-display-2">
+        <b>Your complete Angular App Development kit</b>
+      </p>
+
+      <p gdArea="desc" class="mat-h2">
+        Egret implements the official Angular Material Design components and built with Angular CLI. <br> No Bootstrap!,
+        No jQuery! and Only TypeScript!
+      </p>
+      
+      <div
+        gdArea="features"
+        gdAreas="check-icon1 text1 | check-icon2 text2 | check-icon3 text3"
+        gdRows="auto auto auto"
+        gdColumns="1fr 8fr"
+        gdGap="15px 0px">
+          <mat-icon gdArea="check-icon1" color="accent">check</mat-icon>
+          <p gdArea="text1" class="mat-h3">100+ Custom Pipes, Directives And Components</p>
+          <mat-icon gdArea="check-icon2" color="accent">check</mat-icon>
+          <p gdArea="text2" class="mat-h3">4 color Themes and multi language support</p>
+          <mat-icon gdArea="check-icon3" color="accent">check</mat-icon>
+          <p gdArea="text3" class="mat-h3">Super Flexible And Customizable</p>
+      </div>
+
+      <div gdArea="action">
+        <button mat-raised-button class="lg-button">
+          MORE INFO
+        </button>  
+      </div>
+    </div>
+
+    <span fxShow.gt-md="false" fxFlex="30px"></span>
+    
+    <div fxFlex="50%">
+      <img mat-card-image src="assets/images/egret-screen.png">
+    </div>
+  </div>
+</section>

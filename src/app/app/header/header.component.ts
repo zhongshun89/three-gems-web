@@ -5,27 +5,28 @@ import { SlideInOutAnimation } from './header.animations';
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  animations: [SlideInOutAnimation]
+  animations: [SlideInOutAnimation],
 })
 export class HeaderComponent implements OnInit {
   languages = ['en', 'zh-cn', 'tw'];
-  
+
   navigation = [
     { link: 'about', label: 'about' },
     { link: 'services', label: 'services' },
-    { link: 'customers', label: 'customers' }
+    { link: 'customers', label: 'customers' },
   ];
 
-  menuState = 'out'
+  menuState = 'out';
+  pageState = 'up';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   toggleSlideMenu() {
-    console.log(this.menuState);
     this.menuState = this.menuState === 'out' ? 'in' : 'out';
+  }
+  scrollPage() {
+    this.pageState = this.pageState === 'up' ? 'down' : 'up';
   }
 }

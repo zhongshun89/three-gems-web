@@ -1,0 +1,31 @@
+.section {
+  background: url("/assets/images/intro-bg.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 180px 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.section .container {
+  margin: 35px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.lg-button {
+  width: 150px !important;
+  height: 50px !important;
+  min-height: unset !important;
+  min-width: unset !important;
+}
+
+.intro-product {
+  position: relative;
+  top: 100px;
+  left: 60px;
+}
