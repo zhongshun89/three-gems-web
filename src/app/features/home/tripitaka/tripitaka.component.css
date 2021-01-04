@@ -1,3 +1,5 @@
 .section {
+  position: absolute;
   background-color: white;
+  color: red;
 }

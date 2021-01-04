@@ -10,97 +10,41 @@ import {
     keyframes,
 } from '@angular/animations';
 
-export const SlideInOutAnimation = [
-  trigger('slideInOut', [
+export const HeaderAnimation = [
+  trigger('toggleMenu', [
     state(
-      'in',
+      'show',
       style({
         'max-height': '500px',
         visibility: 'visible',
-        'z-index': 100,
         position: 'absolute',
       })
     ),
     state(
-      'out',
+      'hide',
       style({
         'max-height': '0px',
         visibility: 'hidden',
-        'z-index': 100,
         position: 'absolute',
       })
     ),
-    transition('in => out', [
-      group([
-        animate(
-          '250ms ease-in-out',
-          style({
-            'max-height': '0px',
-          })
-        ),
-        animate(
-          '250ms ease-in-out',
-          style({
-            visibility: 'hidden',
-          })
-        ),
-      ]),
-    ]),
-    transition('out => in', [
-      group([
-        animate(
-          '250ms ease-in-out',
-          style({
-            visibility: 'visible',
-          })
-        ),
-        animate(
-          '250ms ease-in-out',
-          style({
-            'max-height': '500px',
-          })
-        ),
-      ]),
-    ]),
+    transition('show => hide', [animate('250ms linear')]),
+    transition('hide => show', [animate('250ms linear')]),
   ]),
   trigger('scrollDownUp', [
     state(
       'down',
       style({
-        'z-index': 100,
-        position: 'fixed',
-        color: 'red',
-        height: '*',
+        transform: 'translateY(-64px)',
       })
     ),
     state(
       'up',
       style({
-        'z-index': 0,
-        position: 'absolute',
-        color: 'white',
-        height: '*',
+        transform: 'translateY(0px)',
       })
     ),
-    transition('down => up', [
-      group([
-        animate(
-          '1ms ease-in-out',
-          style({
-            position: 'absolute',
-          })
-        ),
-      ]),
-    ]),
-    transition('up => down', [
-      group([
-        animate(
-          '250ms ease-in-out',
-          style({
-            position: 'fixed',
-          })
-        ),
-      ]),
-    ]),
+    transition('down => up', [animate('0.3s linear')]),
+    transition('up => down', [animate('0.3s linear')])
   ]),
 ];

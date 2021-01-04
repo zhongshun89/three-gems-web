@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { SlideInOutAnimation } from './header.animations';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { HeaderAnimation } from './header.animations';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  animations: [SlideInOutAnimation],
+  animations: [HeaderAnimation],
 })
 export class HeaderComponent implements OnInit {
   languages = ['en', 'zh-cn', 'tw'];
@@ -16,17 +17,38 @@ export class HeaderComponent implements OnInit {
     { link: 'customers', label: 'customers' },
   ];
 
-  menuState = 'out';
-  pageState = 'up';
+  menuState = 'hide';
+  scrollState = 'up';
+  oldScrollOffset = 0;
 
-  constructor() {}
+  constructor(
+    private window: Window,
+    private deviceService: DeviceDetectorService
+  ) {}
 
   ngOnInit(): void {}
 
-  toggleSlideMenu() {
-    this.menuState = this.menuState === 'out' ? 'in' : 'out';
+  get isDesktop() {
+    return this.deviceService.isDesktop();
   }
-  scrollPage() {
-    this.pageState = this.pageState === 'up' ? 'down' : 'up';
+
+  toggleSlideMenu() {
+    this.menuState = this.menuState === 'hide' ? 'show' : 'hide';
+  }
+
+  // TODO apply listener conditionally
+  @HostListener('window:scroll')
+  onScroll() {
+    if (this.isDesktop) {
+      console.log('is desktop');
+      const newScrollOffset = this.window.pageYOffset || 0;
+      const scrollSpan = newScrollOffset - this.oldScrollOffset;
+      if (scrollSpan > 10) {
+        this.scrollState = 'down';
+      } else if (scrollSpan < -10) {
+        this.scrollState = 'up';
+      }
+      this.oldScrollOffset = newScrollOffset;
+    }
   }
 }
