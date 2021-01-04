@@ -1,0 +1,58 @@
+<footer
+  fxLayout="row wrap"
+  fxLayout.lt-md="column wrap"
+  fxLayoutGap="3%"
+  class="footer"
+  ngClass.gt-lg="lg-main-padding">
+
+  <div fxFlex.gt-lg="1 1 31%">
+    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px" ngClass.lt-md="info-box" ngClass.gt-lg="info-row">
+      <p gdArea="title" class="mat-headline">
+        <b>About Us</b>
+      </p>
+      <p gdArea="content" class="mat-h4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Officiis perferendis rem, aut aliquam neque nam? dolor sit amet.
+        adipisicing elit consectetur adipisicing elit.
+        Officiis perferendis rem, aut aliquam.
+      </p>
+    </div>
+  </div>
+
+  <mat-divider fxShow.gt-lg="false" class="divider"></mat-divider>
+  
+  <div fxFlex.gt-lg="1 1 32%">
+    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px" ngClass.lt-md="info-box" ngClass.gt-lg="info-row">
+      <p gdArea="title" class="mat-headline">
+        <b>Contact Us</b>
+      </p>
+      <div 
+        gdArea="content"
+        gdAreas="phone-icon phone | email-icon email | location-icon location"
+        gdRows="auto auto auto"
+        gdColumns="1fr 8fr"
+
+        gdGap="25px 0px">
+          <mat-icon gdArea="phone-icon" color="accent">phone</mat-icon>
+          <p gdArea="phone" class="mat-h4">0755-89895898</p>
+          <mat-icon gdArea="email-icon" color="accent">email</mat-icon>
+          <p gdArea="email" class="mat-h4">email@yunhorn.com</p>
+          <mat-icon gdArea="location-icon" color="accent">location_on</mat-icon>
+          <p gdArea="location" class="mat-h4">深圳市南山区高新南六道航盛科技大厦</p>
+      </div>
+    </div>
+  </div>
+  
+  <mat-divider fxShow.gt-lg="false" class="divider"></mat-divider>
+  
+  <div fxFlex.gt-lg="1 1 31%" fxFlex.lt-md="247px">
+    <div gdAreas="title | content" gdRows="auto auto" gdGap="20px" ngClass.lt-md="info-box" ngClass.gt-lg="info-row">
+      <p gdArea="title" class="mat-headline">
+        <b>Quick Links</b>
+      </p>
+      <p gdArea="content" class="mat-h4">
+        云兴科技 ©2020 <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备 14048939号</a>
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,29 @@
+.footer {
+  background-color: #212121;
+  
+  .info-box {
+    padding: 30px;
+  }
+
+  .info-row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    color: white;
+    margin: 0;
+    > b {
+      color: #ffc107;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
+}
+
+.divider {
+  border-top-color: rgb(76, 68, 68) !important;
+  margin: 0 30px;
+}
