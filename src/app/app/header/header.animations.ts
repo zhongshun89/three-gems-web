@@ -4,10 +4,6 @@ import {
     style,
     transition,
     animate,
-    group,
-    query,
-    stagger,
-    keyframes,
 } from '@angular/animations';
 
 export const HeaderAnimation = [
@@ -44,7 +40,7 @@ export const HeaderAnimation = [
         transform: 'translateY(0px)',
       })
     ),
-    transition('down => up', [animate('0.3s linear')]),
-    transition('up => down', [animate('0.3s linear')])
+    transition('down => up', [animate('0.2s linear')]),
+    transition('up => down', [animate('0.25s linear')])
   ]),
 ];

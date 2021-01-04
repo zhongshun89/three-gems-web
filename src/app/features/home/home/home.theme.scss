@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@mixin app-home-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $success: map-get($theme, success);
+
+  header {
+    background-color: mat-color($primary);
+  }
+}

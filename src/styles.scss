@@ -18,10 +18,12 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @import './themes/dark-theme';
 
 @import './app/app/footer/footer.theme';
+@import './app/features/home/home/home.theme';
 
 
 @mixin custom-components-theme($theme) {
   @include app-footer-theme($theme);
+  @include app-home-theme($theme);
 }
 
 .lg-main-padding {

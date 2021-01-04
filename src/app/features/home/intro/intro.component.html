@@ -1,24 +1,23 @@
 <section 
-  fxLayout="row"
-  fxLayout.lt-md="column"
-  fxLayoutWrap="nowrap"
-  fxLayoutGap="30px"
   class="section"
-  ngClass.gt-lg="lg-main-padding">
-  <div class="container">
+  ngClass.gt-lg="lg-main-padding intro-row"
+  fxLayout="row wrap"
+  fxLayout.lt-md="column wrap"
+  fxLayoutGap="4%">
+    
     <div 
-    fxFlex="50%"
-    gdAreas="title | desc | features | action"
-    gdRows="auto auto auto auto"
-    gdGap="30px">
+      fxFlex="43%"
+      ngClass.lt-md="intro-box"
+      gdAreas="title | desc | features | action"
+      gdRows="auto auto auto auto"
+      gdGap="30px">
 
-      <p gdArea="title" class="mat-display-2">
+      <p gdArea="title" class="mat-display-2" ngClass.lt-md="mat-display-1">
         <b>Your complete Angular App Development kit</b>
       </p>
 
-      <p gdArea="desc" class="mat-h2">
-        Egret implements the official Angular Material Design components and built with Angular CLI. <br> No Bootstrap!,
-        No jQuery! and Only TypeScript!
+      <p gdArea="desc" class="mat-h2" ngClass.lt-md="mat-h1">
+        Egret implements the official Angular Material Design components and built with Angular CLI.No Bootstrap!No jQuery! and Only TypeScript!
       </p>
       
       <div
@@ -35,7 +34,7 @@
           <p gdArea="text3" class="mat-h3">Super Flexible And Customizable</p>
       </div>
 
-      <div gdArea="action">
+      <div gdArea="action" gdGridAlign="start end">
         <button mat-raised-button class="lg-button">
           MORE INFO
         </button>  
@@ -44,8 +43,7 @@
 
     <span fxShow.gt-md="false" fxFlex="30px"></span>
     
-    <div fxFlex="50%">
-      <img mat-card-image src="assets/images/egret-screen.png">
+    <div fxFlex="43%" fxFlexAlign="center" ngClass.lt-md="info-box">
+      <!-- <img mat-card-image src="assets/images/egret-screen.png"> -->
     </div>
-  </div>
 </section>
