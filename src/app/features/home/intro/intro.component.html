@@ -1,49 +1,52 @@
 <section 
-  class="section"
-  ngClass.gt-lg="lg-main-padding intro-row"
   fxLayout="row wrap"
   fxLayout.lt-md="column wrap"
-  fxLayoutGap="4%">
-    
-    <div 
-      fxFlex="43%"
-      ngClass.lt-md="intro-box"
-      gdAreas="title | desc | features | action"
-      gdRows="auto auto auto auto"
-      gdGap="30px">
+  fxLayoutGap="4%"
+  fxLayoutGap.lt-md="40px"
+  class="section"
+  ngClass.gt-sm="section-pc-padding"
+  ngClass.lt-md="section-sm-padding">
 
-      <p gdArea="title" class="mat-display-2" ngClass.lt-md="mat-display-1">
-        <b>Your complete Angular App Development kit</b>
-      </p>
+  <div 
+    fxFlex="43%"
+    gdAreas="title | desc | features | action"
+    gdRows="auto auto auto auto"
+    gdGap="30px">
 
-      <p gdArea="desc" class="mat-h2" ngClass.lt-md="mat-h1">
-        Egret implements the official Angular Material Design components and built with Angular CLI.No Bootstrap!No jQuery! and Only TypeScript!
-      </p>
-      
-      <div
-        gdArea="features"
-        gdAreas="check-icon1 text1 | check-icon2 text2 | check-icon3 text3"
-        gdRows="auto auto auto"
-        gdColumns="1fr 8fr"
-        gdGap="15px 0px">
-          <mat-icon gdArea="check-icon1" color="accent">check</mat-icon>
-          <p gdArea="text1" class="mat-h3">100+ Custom Pipes, Directives And Components</p>
-          <mat-icon gdArea="check-icon2" color="accent">check</mat-icon>
-          <p gdArea="text2" class="mat-h3">4 color Themes and multi language support</p>
-          <mat-icon gdArea="check-icon3" color="accent">check</mat-icon>
-          <p gdArea="text3" class="mat-h3">Super Flexible And Customizable</p>
-      </div>
+    <p gdArea="title" class="mat-display-2" ngClass.lt-md="mat-display-1">
+      <b>Your complete Angular App Development kit</b>
+    </p>
 
-      <div gdArea="action" gdGridAlign="start end">
-        <button mat-raised-button class="lg-button">
-          MORE INFO
-        </button>  
-      </div>
+    <p gdArea="desc" class="mat-h2" ngClass.lt-md="mat-h1">
+      Egret implements the official Angular Material Design components and built with Angular CLI.No Bootstrap!No jQuery! and Only TypeScript!
+    </p>
+
+    <div
+      gdArea="features"
+      gdAreas="check-icon1 text1 | check-icon2 text2 | check-icon3 text3"
+      gdRows="auto auto auto"
+      gdColumns="1fr 8fr"
+      gdGap="10px 0px">
+        <mat-icon gdArea="check-icon1" color="accent">check</mat-icon>
+        <p gdArea="text1" class="mat-h3">100+ Custom Pipes, Directives And Components</p>
+        <mat-icon gdArea="check-icon2" color="accent">check</mat-icon>
+        <p gdArea="text2" class="mat-h3">4 color Themes and multi language support</p>
+        <mat-icon gdArea="check-icon3" color="accent">check</mat-icon>
+        <p gdArea="text3" class="mat-h3">Super Flexible And Customizable</p>
     </div>
 
-    <span fxShow.gt-md="false" fxFlex="30px"></span>
-    
-    <div fxFlex="43%" fxFlexAlign="center" ngClass.lt-md="info-box">
-      <!-- <img mat-card-image src="assets/images/egret-screen.png"> -->
+    <div gdArea="action" gdGridAlign="start end">
+      <button mat-raised-button class="lg-button">
+        MORE INFO
+      </button>  
     </div>
+    
+  </div>
+
+  <span fxShow.gt-sm="false" fxFlex="30px"></span>
+  
+  <div fxFlex="43%" fxFlexAlign="center">
+    <!-- <img mat-card-image src="assets/images/egret-screen.png"> -->
+  </div>
+
 </section>

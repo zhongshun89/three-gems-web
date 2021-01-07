@@ -1,0 +1,23 @@
+.section {
+  background-color: white;
+
+  .header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .pc-content {
+    max-width: calc(100vw - var(--pc-main-padding)*2 - 20px); // subtract 20px of scroll width
+  }
+  .sm-content {
+    max-width: calc(100vw - var(--sm-main-padding)*2);
+  }
+  
+  .pc-card {
+    margin: 15px !important;
+  }
+  .sm-card {
+    margin: 7px !important;
+  }
+
+}

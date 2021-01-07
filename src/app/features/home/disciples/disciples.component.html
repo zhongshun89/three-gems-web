@@ -1,0 +1,49 @@
+<section
+  gdAreas="header | content"
+  gdRows="auto auto"
+  gdGap="40px"
+  gdGap.lt-md="20px"
+  class="section"
+  ngClass.gt-sm="section-pc-padding"
+  ngClass.lt-md="section-sm-padding"
+  >
+
+  <div gdArea="header">
+    <p class="mat-headline">
+      <b>What our customers says</b>
+    </p>
+    <p class="mat-body">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat unde inventore molesadipisci placeatat.
+    </p>
+  </div>
+  <owl-carousel-o 
+    gdArea="content"
+    gdGridAlign="center center"
+    [options]="customOptions"
+    ngClass.gt-sm="pc-content"
+    ngClass.lt-md="sm-content">
+
+    <ng-template *ngFor="let slide of disciples"carouselSlide [id]="slide.id">
+      <mat-card class="mat-elevation-z3" ngClass.gt-sm="pc-card" ngClass.lt-md="sm-card">
+        <mat-card-header>
+          <div mat-card-avatar class="header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>{{slide.id}}</mat-card-subtitle>
+        </mat-card-header>
+        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+        <mat-card-content>
+          <p class="mat-body">
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+    </ng-template>
+
+  </owl-carousel-o>
+</section>

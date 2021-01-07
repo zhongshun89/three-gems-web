@@ -6,7 +6,7 @@
   $warn: map-get($theme, warn);
   $success: map-get($theme, success);
 
-  header {
+  .section {
     background-color: mat-color($primary);
   }
 }

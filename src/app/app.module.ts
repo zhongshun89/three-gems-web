@@ -11,20 +11,14 @@ import { FooterComponent } from './app/footer/footer.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule
   ],
-  providers: [
-    { provide: Window, useValue: window }
-  ],
-  bootstrap: [AppComponent]
+  providers: [{ provide: Window, useValue: window }],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

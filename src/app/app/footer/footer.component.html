@@ -2,14 +2,18 @@
   fxLayout="row wrap"
   fxLayout.lt-md="column wrap"
   fxLayoutGap="3%"
+  fxLayoutGap.lt-md="40px"
   class="footer"
-  ngClass.gt-lg="lg-main-padding">
+  ngClass.gt-sm="footer-pc-padding"
+  ngClass.lt-md="footer-sm-padding"
+  >
 
-  <div fxFlex.gt-lg="1 1 31%">
-    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px" ngClass.lt-md="info-box" ngClass.gt-lg="info-row">
+  <div fxFlex.gt-sm="1 1 31%">
+    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px">
       <p gdArea="title" class="mat-headline">
         <b>About Us</b>
       </p>
+
       <p gdArea="content" class="mat-h4">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Officiis perferendis rem, aut aliquam neque nam? dolor sit amet.
@@ -19,10 +23,10 @@
     </div>
   </div>
 
-  <mat-divider fxShow.gt-lg="false" class="divider"></mat-divider>
+  <mat-divider fxShow.gt-sm="false" class="divider"></mat-divider>
   
-  <div fxFlex.gt-lg="1 1 32%">
-    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px" ngClass.lt-md="info-box" ngClass.gt-lg="info-row">
+  <div fxFlex.gt-sm="1 1 32%">
+    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px">
       <p gdArea="title" class="mat-headline">
         <b>Contact Us</b>
       </p>
@@ -31,7 +35,6 @@
         gdAreas="phone-icon phone | email-icon email | location-icon location"
         gdRows="auto auto auto"
         gdColumns="1fr 8fr"
-
         gdGap="25px 0px">
           <mat-icon gdArea="phone-icon" color="accent">phone</mat-icon>
           <p gdArea="phone" class="mat-h4">0755-89895898</p>
@@ -43,10 +46,10 @@
     </div>
   </div>
   
-  <mat-divider fxShow.gt-lg="false" class="divider"></mat-divider>
+  <mat-divider fxShow.gt-sm="false" class="divider"></mat-divider>
   
-  <div fxFlex.gt-lg="1 1 31%" fxFlex.lt-md="247px">
-    <div gdAreas="title | content" gdRows="auto auto" gdGap="20px" ngClass.lt-md="info-box" ngClass.gt-lg="info-row">
+  <div fxFlex.gt-sm="1 1 31%" fxFlex.lt-md="247px">
+    <div gdAreas="title | content" gdRows="auto auto" gdGap="20px">
       <p gdArea="title" class="mat-headline">
         <b>Quick Links</b>
       </p>
@@ -55,4 +58,5 @@
       </p>
     </div>
   </div>
+
 </footer>
