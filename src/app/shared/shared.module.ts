@@ -26,6 +26,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
+import { CustomElevationDirective } from './elevation/custom-elevation.directive';
 
 
 @NgModule({
@@ -61,9 +62,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatSidenavModule,
     MatDividerModule
   ],
-  declarations: [
-
-  ],
+  declarations: [CustomElevationDirective],
   exports: [
     CommonModule,
     FormsModule,
@@ -93,7 +92,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatSlideToggleModule,
     MatFormFieldModule,
     MatInputModule,
-    MatDividerModule
+    MatDividerModule,
+    CustomElevationDirective
   ]
 })
 export class SharedModule {}

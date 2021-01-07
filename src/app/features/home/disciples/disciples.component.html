@@ -24,7 +24,13 @@
     ngClass.lt-md="sm-content">
 
     <ng-template *ngFor="let slide of disciples"carouselSlide [id]="slide.id">
-      <mat-card class="mat-elevation-z3" ngClass.gt-sm="pc-card" ngClass.lt-md="sm-card">
+      <mat-card
+        appCustomElevation 
+        [defaultElevation]="4"
+        raisedElevation="8"
+        ngClass.gt-sm="pc-card"
+        ngClass.lt-md="sm-card">
+
         <mat-card-header>
           <div mat-card-avatar class="header-image"></div>
           <mat-card-title>Shiba Inu</mat-card-title>
