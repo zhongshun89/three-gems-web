@@ -12,7 +12,7 @@ export class DisciplesComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     dots: true,
     navSpeed: 700,
