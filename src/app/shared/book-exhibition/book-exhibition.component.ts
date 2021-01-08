@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-exhibition.component.scss']
 })
 export class BookExhibitionComponent implements OnInit {
-  transformClass: string [] = []
+  transformClass: string [] = ['view-default']
 
   constructor() {}
 
