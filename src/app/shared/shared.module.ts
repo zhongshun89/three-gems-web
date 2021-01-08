@@ -26,7 +26,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
-import { CustomElevationDirective } from './elevation/custom-elevation.directive';
+import { CustomElevationDirective } from './custom-elevation/custom-elevation.directive';
+import { BookExhibitionComponent } from './book-exhibition/book-exhibition.component';
 
 
 @NgModule({
@@ -62,7 +63,7 @@ import { CustomElevationDirective } from './elevation/custom-elevation.directive
     MatSidenavModule,
     MatDividerModule
   ],
-  declarations: [CustomElevationDirective],
+  declarations: [CustomElevationDirective, BookExhibitionComponent],
   exports: [
     CommonModule,
     FormsModule,
@@ -93,7 +94,8 @@ import { CustomElevationDirective } from './elevation/custom-elevation.directive
     MatFormFieldModule,
     MatInputModule,
     MatDividerModule,
-    CustomElevationDirective
+    CustomElevationDirective,
+    BookExhibitionComponent
   ]
 })
 export class SharedModule {}

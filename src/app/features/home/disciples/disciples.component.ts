@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+import { OwlOptions } from 'ngx-owl-carousel-o'; // https://github.com/vitalii-andriiovskyi/ngx-owl-carousel-o
 
 
 @Component({

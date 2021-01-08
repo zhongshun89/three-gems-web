@@ -40,7 +40,6 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll')
   onScroll() {
     if (this.isDesktop) {
-      console.log('is desktop');
       const newScrollOffset = this.window.pageYOffset || 0;
       const scrollSpan = newScrollOffset - this.oldScrollOffset;
       if (scrollSpan > 10) {
