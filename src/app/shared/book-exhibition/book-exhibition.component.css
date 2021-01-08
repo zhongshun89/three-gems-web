@@ -186,9 +186,8 @@
 }
 
 .bk-cover {
-  background-image: var(--bookImage);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: var(--bookImage) no-repeat center center;
+  background-size: 100% 100%;
 }
 
 .bk-cover:after {
