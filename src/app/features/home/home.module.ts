@@ -4,6 +4,7 @@ import { SharedModule } from '../../shared/shared.module';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
+import { IconService } from './shared/icon.service'
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
@@ -23,6 +24,7 @@ import { DisciplesComponent } from './disciples/disciples.component';
     HomeRoutingModule,
     SharedModule,
     CarouselModule
-  ]
+  ],
+  providers: [IconService],
 })
 export class HomeModule { }
