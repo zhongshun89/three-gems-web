@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BookConfigure } from '@shared/book-exhibition/book-exhibition.model';
 
 @Component({
   selector: 'home-tripitaka',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripitakaComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  bookConfigure: BookConfigure = {
+    height: '400px',
+    width: '300px',
+    // color: 'gray',
+    image: ''
   }
+
+  constructor() {}
+
+  ngOnInit(): void {}
 
 }

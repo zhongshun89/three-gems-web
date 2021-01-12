@@ -8,7 +8,8 @@
     <div class="bk-book" [ngClass]="transformClass">
       <div class="bk-front">
         <div class="bk-cover-back"></div>
-        <div class="bk-cover">
+        <!-- dynamic set background image: https://www.iditect.com/how-to/52382051.html -->
+        <div [style.backgroundImage]="'url('+image+')'" class="bk-cover">
         </div>
       </div>
       <div class="bk-page">
@@ -28,18 +29,18 @@
       <div class="bk-right"></div>
       <div class="bk-left">
         <h2>
-          <span>Anthony Burghiss A Catwork Orange</span>
+          <span>{{spine}}</span>
         </h2>
       </div>
       <div class="bk-top"></div>
     </div>
   </div>
   <div gdArea="action">
-    <button mat-raised-button color="primary" (click)="viewBack()">
+    <!-- <button mat-raised-button color="primary" (click)="viewBack()">
       back
     </button>
     <button mat-raised-button color="primary" (click)="viewInside()">
       inside
-    </button>
+    </button> -->
   </div>
 </div>
