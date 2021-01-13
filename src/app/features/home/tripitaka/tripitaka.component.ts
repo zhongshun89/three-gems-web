@@ -12,7 +12,8 @@ export class TripitakaComponent implements OnInit {
     height: '400px',
     width: '300px',
     // color: 'gray',
-    image: ''
+    image: '',
+    direction: 'view-default-left'
   }
 
   constructor() {}

@@ -1,6 +1,6 @@
 <section
   gdAreas="header | content"
-  gdRows="auto 1000px"
+  gdRows="auto auto"
   gdGap="40px"
   gdGap.lt-md="20px"
   class="section"
@@ -16,15 +16,59 @@
     </p>
   </div>
   <div gdArea="content">
-    <book-exhibition [configure]="bookConfigure"></book-exhibition>
+    <mat-tab-group gdArea="content" mat-align-tabs="center" animationDuration="1000ms">
+      <mat-tab label="First">
+        <div
+          gdAreas="description book"
+          gdColumns="2fr 1fr"
+          gdAreas.lt-md="book | description"
+          gdRows.lt-md="auto auto"
+          gdGap="40px"
+          gdGap.lt-md="20px"
+        >
+          <div gdArea="book" gdGridAlign="end center" class="book">
+            <book-exhibition [configure]="bookConfigure"></book-exhibition>
+          </div>
+          <div gdArea="description">
+
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Second">
+        <div
+          gdAreas="description book"
+          gdColumns="2fr 1fr"
+          gdAreas.lt-md="book | description"
+          gdRows.lt-md="auto auto"
+          gdGap="40px"
+          gdGap.lt-md="20px"
+        >
+          <div gdArea="book" gdGridAlign="end center" class="book">
+            <book-exhibition [configure]="bookConfigure"></book-exhibition>
+          </div>
+          <div gdArea="description">
+
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Third">
+        <div
+          gdAreas="description book"
+          gdColumns="2fr 1fr"
+          gdAreas.lt-md="book | description"
+          gdRows.lt-md="auto auto"
+          gdGap="40px"
+          gdGap.lt-md="20px"
+        >
+          <div gdArea="book" gdGridAlign="end center" class="book">
+            <book-exhibition [configure]="bookConfigure"></book-exhibition>
+          </div>
+          <div gdArea="description">
+
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
     <!-- <mat-icon svgIcon="open-book" color="primary"></mat-icon> -->
   </div>
-
-  <!-- <mat-tab-group gdArea="content" mat-align-tabs="center" animationDuration="1000ms">
-    <mat-tab label="First">
-    </mat-tab>
-    <mat-tab label="Second">Content 2</mat-tab>
-    <mat-tab label="Third">Content 3</mat-tab>
-  </mat-tab-group> -->
-
 </section>

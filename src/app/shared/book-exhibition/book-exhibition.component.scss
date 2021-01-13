@@ -1,6 +1,11 @@
+.container {
+  margin: 40px 0;
+}
+
 .main {
-	width: var(--width);
-	margin: 0px 50px 40px 0;
+  width: var(--width);
+  height: var(--height);
+	margin: 0px 10px 20px 0;
 	-webkit-perspective: 1800px;
 	perspective: 1800px;
 }
@@ -143,7 +148,7 @@
 
 // book right
 .bk-right {
-  width: 40px;
+  width: 38px;
 	height: calc(var(--height) - 13px);
 	left: -20px;
   top: 5px;

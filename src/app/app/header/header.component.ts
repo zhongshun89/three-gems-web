@@ -28,6 +28,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  // TODO globally
   get isDesktop() {
     return this.deviceService.isDesktop();
   }

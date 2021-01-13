@@ -9,11 +9,10 @@ import { BookConfigure } from './book-exhibition.model'
 export class BookExhibitionComponent implements OnInit {
   @Input() configure: BookConfigure;
 
-  transformClass: string [] = ['view-default-right'];
-  
   @HostBinding("style.--width") width: string;
   @HostBinding("style.--height") height: string;
   @HostBinding("style.--color") color: string;
+  transformClass: string [] = ['view-default-right'];
   image: string;
   spine: string;
 
@@ -22,10 +21,11 @@ export class BookExhibitionComponent implements OnInit {
   ngOnInit(): void {
     this.width = this.configure.width;
     this.height = this.configure.height;
-    this.color = this.configure.color ?? '#F33139';
+    // this.color = this.configure.color ?? '#F33139';
     this.color = this.configure.color ?? 'gray';
     this.image = this.configure.image ?? '';
     this.spine = this.configure.spine ?? '';
+    this.transformClass[0] = this.configure.direction ?? 'view-default-right';
   }
 
   viewInside() {

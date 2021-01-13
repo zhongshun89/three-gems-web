@@ -3,5 +3,6 @@ export interface BookConfigure {
   height: string,
   image?: string,
   color?: string,
-  spine?: string
+  spine?: string,
+  direction?: string
 }
