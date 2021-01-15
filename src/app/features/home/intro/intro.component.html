@@ -1,5 +1,4 @@
 <section
-
   gdAreas.lt-md="intro | image"
   gdRows.lt-md="auto auto"
   gdGap.lt-md="30px"
@@ -8,19 +7,19 @@
   gdColumns.gt-sm="1fr 1fr"
   gdGap.gt-sm="60px"
   ngClass.gt-sm="section--pc"
-  class="section"
 >
   <div
     gdArea="intro" 
     gdAreas="title | desc | features | action"
     gdRows="auto auto auto auto"
-    gdGap="30px">
+    gdGap="30px"
+    gdGap.gt-sm="50px">
 
-    <p gdArea="title" class="mat-display-2" ngClass.lt-md="mat-display-1">
-      <b>Your complete Angular App Development kit</b>
+    <p gdArea="title" ngClass.lt-md="mat-display-1" ngClass.gt-sm="mat-display-2">
+      Your complete Angular App Development kit
     </p>
 
-    <p gdArea="desc" class="mat-h2" ngClass.lt-md="mat-h1">
+    <p gdArea="desc" ngClass.lt-md="mat-h3" ngClass.gt-sm="mat-h1">
       Egret implements the official Angular Material Design components and built with Angular CLI.No Bootstrap!No jQuery! and Only TypeScript!
     </p>
 
@@ -29,13 +28,15 @@
       gdAreas="check-icon1 text1 | check-icon2 text2 | check-icon3 text3"
       gdRows="auto auto auto"
       gdColumns="1fr 8fr"
-      gdGap="10px 0px">
-        <mat-icon gdArea="check-icon1" color="accent">check</mat-icon>
-        <p gdArea="text1" class="mat-h3">100+ Custom Pipes, Directives And Components</p>
-        <mat-icon gdArea="check-icon2" color="accent">check</mat-icon>
-        <p gdArea="text2" class="mat-h3">4 color Themes and multi language support</p>
-        <mat-icon gdArea="check-icon3" color="accent">check</mat-icon>
-        <p gdArea="text3" class="mat-h3">Super Flexible And Customizable</p>
+      gdGap="7px"
+      gdGap.gt-sm="10px"
+    >
+      <mat-icon gdArea="check-icon1" color="accent">check</mat-icon>
+      <p gdArea="text1" ngClass.lt-md="mat-h4" ngClass.gt-sm="mat-h3">100+ Custom Pipes, Directives And Components</p>
+      <mat-icon gdArea="check-icon2" color="accent">check</mat-icon>
+      <p gdArea="text2" ngClass.lt-md="mat-h4" ngClass.gt-sm="mat-h3">4 color Themes and multi language support</p>
+      <mat-icon gdArea="check-icon3" color="accent">check</mat-icon>
+      <p gdArea="text3" ngClass.lt-md="mat-h4" ngClass.gt-sm="mat-h3">Super Flexible And Customizable</p>
     </div>
 
     <div gdArea="action" gdGridAlign="start end">
