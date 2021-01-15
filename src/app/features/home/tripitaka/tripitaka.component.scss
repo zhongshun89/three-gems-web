@@ -1,9 +1,18 @@
 @use 'modules/home.module';
 
-.section {
+section {
   background-color: #f5fafa;
 
+  p {
+    margin: 0px;
+  }
+
   .book {
-    margin-top: 70px;
+    &--sm {
+      margin-top: 40px;
+    }
+    &--pc {
+      margin-top: 70px;
+    }
   }
 }

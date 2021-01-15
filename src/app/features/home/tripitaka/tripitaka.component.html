@@ -1,75 +1,71 @@
 <section
   gdAreas="header | content"
   gdRows="auto auto"
-  gdGap="40px"
-  gdGap.lt-md="20px"
-  class="section"
+  gdGap="30px"
+  gdGap.gt-sm="40px"
   ngClass.lt-md="section--sm"
   ngClass.gt-sm="section--pc"
 >
-
-  <div gdArea="header">
-    <p class="mat-headline">
-      <b>met consectetur adipisicing</b>
+  <header gdArea="header" gdAreas="title | description" gdGap="10px" gdGap.gt-sm="25px">
+    <p gdArea="title" ngClass.lt-md="mat-display-1" ngClass.gt-sm="mat-display-2">
+      Amet Cnsectetur Adipisicing
     </p>
-    <p class="mat-body">
+    <p gdArea="description" class="mat-body">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat unde inventore molesadipisci placeatat.
     </p>
-  </div>
-  <div gdArea="content">
-    <mat-tab-group gdArea="content" mat-align-tabs="center" animationDuration="1000ms">
-      <mat-tab label="First">
-        <div
-          gdAreas="description book"
-          gdColumns="2fr 1fr"
-          gdAreas.lt-md="book | description"
-          gdRows.lt-md="auto auto"
-          gdGap="40px"
-          gdGap.lt-md="20px"
-        >
-          <div gdArea="book" gdGridAlign="end center" class="book">
-            <book-exhibition [configure]="bookConfigure"></book-exhibition>
-          </div>
-          <div gdArea="description">
-            
-          </div>
-        </div>
-      </mat-tab>
-      <mat-tab label="Second">
-        <div
-          gdAreas="description book"
-          gdColumns="2fr 1fr"
-          gdAreas.lt-md="book | description"
-          gdRows.lt-md="auto auto"
-          gdGap="40px"
-          gdGap.lt-md="20px"
-        >
-          <div gdArea="book" gdGridAlign="end center" class="book">
-            <book-exhibition [configure]="bookConfigure"></book-exhibition>
-          </div>
-          <div gdArea="description">
+  </header>
 
-          </div>
+  <mat-tab-group gdArea="content" mat-align-tabs="center" animationDuration="1000ms">
+    <mat-tab label="First">
+      <div
+        gdAreas.lt-md="book | description"
+        gdRows.lt-md="auto auto"
+        gdGap.lt-md="10px"
+        gdAreas.gt-sm="description book"
+        gdColumns.gt-sm="2fr 1fr"
+        gdGap.gt-sm="40px"
+      >
+        <div gdArea="book" gdGridAlign="end center" ngClass.lt-md="book--sm" ngClass.gt-sm="book--pc">
+          <book-exhibition [configure]="bookConfigure"></book-exhibition>
         </div>
-      </mat-tab>
-      <mat-tab label="Third">
-        <div
-          gdAreas="description book"
-          gdColumns="2fr 1fr"
-          gdAreas.lt-md="book | description"
-          gdRows.lt-md="auto auto"
-          gdGap="40px"
-          gdGap.lt-md="20px"
-        >
-          <div gdArea="book" gdGridAlign="end center" class="book">
-            <book-exhibition [configure]="bookConfigure"></book-exhibition>
-          </div>
-          <div gdArea="description">
-
-          </div>
+        <div gdArea="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat unde inventore molesadipisci placeatat.
         </div>
-      </mat-tab>
-    </mat-tab-group>
-    <!-- <mat-icon svgIcon="open-book" color="primary"></mat-icon> -->
-  </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Second">
+      <div
+        gdAreas.lt-md="book | description"
+        gdRows.lt-md="auto auto"
+        gdGap.lt-md="20px"
+        gdAreas.gt-sm="description book"
+        gdColumns.gt-sm="2fr 1fr"
+        gdGap.gt-sm="40px"
+      >
+        <div gdArea="book" gdGridAlign="end center" ngClass.lt-md="book--sm" ngClass.gt-sm="book--pc">
+          <book-exhibition [configure]="bookConfigure"></book-exhibition>
+        </div>
+        <div gdArea="description">
+          <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat unde inventore molesadipisci placeatat. -->
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Third">
+      <div
+        gdAreas.lt-md="book | description"
+        gdRows.lt-md="auto auto"
+        gdGap.lt-md="20px"
+        gdAreas.gt-sm="description book"
+        gdColumns.gt-sm="2fr 1fr"
+        gdGap.gt-sm="40px"
+      >
+        <div gdArea="book" gdGridAlign="end center" ngClass.lt-md="book--sm" ngClass.gt-sm="book--pc">
+          <book-exhibition [configure]="bookConfigure"></book-exhibition>
+        </div>
+        <div gdArea="description">
+          <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat unde inventore molesadipisci placeatat. -->
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
 </section>
