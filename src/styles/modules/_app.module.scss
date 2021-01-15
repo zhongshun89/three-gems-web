@@ -1,7 +1,8 @@
-.section--pc {
-  padding: 0px var(--pc-main-padding);
-}
-
-.section--sm {
-  padding: 0px var(--sm-main-padding);
+.section {
+  &--pc {
+    padding: 0px var(--pc-main-padding);
+  }
+  &--sm {
+    padding: 0px var(--sm-main-padding);
+  }
 }

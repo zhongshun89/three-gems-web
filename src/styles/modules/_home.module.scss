@@ -1,6 +1,8 @@
-.section--pc {
-  padding: var(--pc-cross-padding) var(--pc-main-padding);
-}
-.section--sm {
-  padding: var(--sm-cross-padding) var(--sm-main-padding);
+.section {
+  &--pc {
+    padding: var(--pc-cross-padding) var(--pc-main-padding);
+  }
+  &--sm {
+    padding: var(--sm-cross-padding) var(--sm-main-padding);
+  }
 }

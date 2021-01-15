@@ -1,35 +1,35 @@
 <section
   gdAreas="header | content"
   gdRows="auto auto"
-  gdGap="40px"
-  gdGap.lt-md="20px"
-  class="section"
+  gdGap="30px"
+  gdGap.gt-sm="40px"
   ngClass.lt-md="section--sm"
   ngClass.gt-sm="section--pc"
 >
-
-  <div gdArea="header">
-    <p class="mat-headline">
-      <b>What our customers says</b>
+  <header gdArea="header" gdAreas="title | description" gdGap="10px" gdGap.gt-sm="25px">
+    <p gdArea="title" ngClass.lt-md="mat-display-1" ngClass.gt-sm="mat-display-2">
+      What our customers says
     </p>
-    <p class="mat-body">
+    <p gdArea="description" class="mat-body">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat unde inventore molesadipisci placeatat.
     </p>
-  </div>
+  </header>
+
   <owl-carousel-o 
     gdArea="content"
     gdGridAlign="center center"
     [options]="customOptions"
-    ngClass.gt-sm="pc-content"
-    ngClass.lt-md="sm-content">
-
+    ngClass.lt-md="carousel--sm"
+    ngClass.gt-sm="carousel--pc"
+  >
     <ng-template *ngFor="let slide of disciples"carouselSlide [id]="slide.id">
       <mat-card
         appCustomElevation 
         [defaultElevation]="4"
         raisedElevation="8"
-        ngClass.gt-sm="pc-card"
-        ngClass.lt-md="sm-card">
+        ngClass.lt-md="card--sm"
+        ngClass.gt-sm="card--pc"
+      >
 
         <mat-card-header>
           <div mat-card-avatar class="header-image"></div>
@@ -50,6 +50,5 @@
         </mat-card-actions>
       </mat-card>
     </ng-template>
-
   </owl-carousel-o>
 </section>

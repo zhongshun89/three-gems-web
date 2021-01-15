@@ -1,13 +1,14 @@
 @use 'modules/app.module';
 
-.cross-padding--pc {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.cross-padding--sm {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.cross-padding {
+  &--pc {
+    padding-top: 80px;
+    padding-bottom: 80px;  
+  }
+  &--sm {
+    padding-top: 50px;
+    padding-bottom: 50px;  
+  }
 }
 
 footer {
