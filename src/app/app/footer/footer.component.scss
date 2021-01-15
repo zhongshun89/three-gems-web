@@ -1,12 +1,26 @@
-.footer {
+@use 'modules/app.module';
+
+.cross-padding--pc {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.cross-padding--sm {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer {
   background-color: #212121;
 
+  h2 {
+    color: #ffc107;
+    margin: 0px;
+  }
+
   p {
-    color: white;
+    color: white !important;
     margin: 0;
-    > b {
-      color: #ffc107;
-    }
   }
   
   a {

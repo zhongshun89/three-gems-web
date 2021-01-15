@@ -1,62 +1,56 @@
 <footer
-  fxLayout="row wrap"
-  fxLayout.lt-md="column wrap"
-  fxLayoutGap="3%"
-  fxLayoutGap.lt-md="40px"
-  class="footer"
-  ngClass.gt-sm="footer-pc-padding"
-  ngClass.lt-md="footer-sm-padding"
-  >
+  gdAreas.lt-md="about | divider1 | contact | divider2 | info"
+  gdRows.lt-md="auto auto auto auto auto"
+  gdGap.lt-md="30px"
+  ngClass.lt-md="section--sm cross-padding--sm"
+  gdAreas.gt-sm="about contact info"
+  gdColumns.gt-sm="1fr 1fr 1fr"
+  gdGap.gt-sm="60px"
+  ngClass.gt-sm="section--pc cross-padding--pc"
+>
+  <section gdArea="about" gdRows="auto 1fr" gdGap="20px" gdGap.gt-sm="30px">
+    <h2 class="mat-title">
+      About Us
+    </h2>
 
-  <div fxFlex.gt-sm="1 1 31%">
-    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px">
-      <p gdArea="title" class="mat-headline">
-        <b>About Us</b>
-      </p>
+    <p class="mat-h4">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Officiis perferendis rem, aut aliquam neque nam? dolor sit amet.
+      adipisicing elit consectetur adipisicing elit.
+      Officiis perferendis rem, aut aliquam.
+    </p>
+  </section>
 
-      <p gdArea="content" class="mat-h4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Officiis perferendis rem, aut aliquam neque nam? dolor sit amet.
-        adipisicing elit consectetur adipisicing elit.
-        Officiis perferendis rem, aut aliquam.
-      </p>
-    </div>
-  </div>
-
-  <mat-divider fxShow.gt-sm="false" class="divider"></mat-divider>
+  <mat-divider gdArea="divider1" fxShow.gt-sm="false" class="divider"></mat-divider>
   
-  <div fxFlex.gt-sm="1 1 32%">
-    <div gdAreas="title | content" gdRows="auto auto" gdGap="35px">
-      <p gdArea="title" class="mat-headline">
-        <b>Contact Us</b>
-      </p>
-      <div 
-        gdArea="content"
-        gdAreas="phone-icon phone | email-icon email | location-icon location"
-        gdRows="auto auto auto"
-        gdColumns="1fr 8fr"
-        gdGap="25px 0px">
-          <mat-icon gdArea="phone-icon" color="accent">phone</mat-icon>
-          <p gdArea="phone" class="mat-h4">0755-89895898</p>
-          <mat-icon gdArea="email-icon" color="accent">email</mat-icon>
-          <p gdArea="email" class="mat-h4">email@yunhorn.com</p>
-          <mat-icon gdArea="location-icon" color="accent">location_on</mat-icon>
-          <p gdArea="location" class="mat-h4">深圳市南山区高新南六道航盛科技大厦</p>
-      </div>
-    </div>
-  </div>
-  
-  <mat-divider fxShow.gt-sm="false" class="divider"></mat-divider>
-  
-  <div fxFlex.gt-sm="1 1 31%" fxFlex.lt-md="247px">
-    <div gdAreas="title | content" gdRows="auto auto" gdGap="20px">
-      <p gdArea="title" class="mat-headline">
-        <b>Quick Links</b>
-      </p>
-      <p gdArea="content" class="mat-h4">
-        云兴科技 ©2020 <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备 14048939号</a>
-      </p>
-    </div>
-  </div>
+  <section gdArea="contact" gdRows="auto 1fr" gdGap="20px" gdGap.gt-sm="30px">
+    <h2 class="mat-title">
+      Contact Us
+    </h2>
 
+    <div 
+      gdAreas="phone-icon phone | email-icon email | location-icon location"
+      gdRows="auto auto auto"
+      gdColumns="1fr 8fr"
+      gdGap="15px 0px"
+    >
+      <mat-icon gdArea="phone-icon" color="accent">phone</mat-icon>
+      <p gdArea="phone" class="mat-h4">0755-89895898</p>
+      <mat-icon gdArea="email-icon" color="accent">email</mat-icon>
+      <p gdArea="email" class="mat-h4">email@yunhorn.com</p>
+      <mat-icon gdArea="location-icon" color="accent">location_on</mat-icon>
+      <p gdArea="location" class="mat-h4">深圳市南山区高新南六道航盛科技大厦</p>
+    </div>
+  </section>
+  
+  <mat-divider gdArea="divider2" fxShow.gt-sm="false" class="divider"></mat-divider>
+  
+  <section gdArea="info" gdRows="auto 1fr" gdGap="20px" gdGap.gt-sm="30px">
+    <h2 class="mat-title">
+      Quick Links
+    </h2>
+    <p class="mat-h4">
+      云兴科技 ©2020 <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备 14048939号</a>
+    </p>
+  </section>
 </footer>

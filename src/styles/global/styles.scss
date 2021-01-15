@@ -2,26 +2,27 @@
 $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/';
 @import '~material-design-icons-iconfont/src/material-design-icons';
 
-/* self host material fonts */
-@import 'assets/fonts/fonts';
+/* self host google fonts */
+@import 'fonts';
 
-/* */
-@import 'styles-variables';
+/* global variables */
+@import 'variables';
 
-
-/* themes */
+/* material themes */
 @import '~@angular/material/theming';
 
 @include mat-core();
 
-@import './themes/default-theme';
-@import './themes/dark-theme';
+@import 'default-theme';
+@import 'dark-theme';
 
-@import './app/app/footer/footer.theme';
-@import './app/features/home/home/home.theme';
-
+/* third library styles */
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+/* component themes */
+@import '../../app/app/footer/footer.theme';
+@import '../../app/features/home/home/home.theme';
 
 
 @mixin custom-components-theme($theme) {
@@ -29,29 +30,11 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
   @include app-home-theme($theme);
 }
 
-.default-theme {
+.theme-default {
   @include angular-material-theme($default-theme);
   @include custom-components-theme($default-theme);
 }
-.dark-theme {
+.theme-dark {
   @include angular-material-theme($dark-theme);
   @include custom-components-theme($dark-theme);
-}
-
-.header-pc-padding {
-  padding: 30px var(--pc-main-padding) !important;
-}
-
-.footer-pc-padding {
-  padding: 80px var(--pc-main-padding) !important;
-}
-.footer-sm-padding {
-  padding: 60px var(--sm-main-padding) !important;
-}
-
-.section-pc-padding {
-  padding: 90px var(--pc-main-padding) !important;
-}
-.section-sm-padding {
-  padding: 60px var(--sm-main-padding) !important;
 }

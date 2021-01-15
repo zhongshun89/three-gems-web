@@ -1,14 +1,18 @@
 <header [@scrollDownUp]="scrollState">
-
-  <mat-toolbar color="primary" ngClass.gt-sm="header-pc-padding" [class.mat-elevation-z4]="true">
-    <p class="mat-headline">
+  <mat-toolbar 
+    gdColumns="auto 1fr auto"
+    ngClass.gt-sm="section--pc"
+    [class.mat-elevation-z4]="true"
+    color="primary"
+  >
+    <h1 class="mat-headline">
       SmartToilets
-    </p>
-    <span class="spacer"></span>
+    </h1>
+    <span></span>
     <button fxShow.gt-sm="false" mat-icon-button (click)="toggleSlideMenu()"> 
       <mat-icon>menu</mat-icon>
     </button>
-    <div fxShow.lt-md="false">
+    <nav fxShow="false" fxShow.gt-sm="true">
       <button mat-button>
         About
       </button>
@@ -24,11 +28,16 @@
       <button mat-button>
         Contact
       </button>
-    </div>
+    </nav>
   </mat-toolbar>
 
-  <div [@toggleMenu]="menuState" gdRows="auto auto auto auto auto" gdGap="10px" fxShow.gt-sm="false" class="menu">
-    <button mat-button color="primary" >
+  <nav
+    [@toggleMenu]="menuState"
+    gdAuto="row"
+    fxShow.gt-sm="false"
+    class="sm-menu"
+  >
+    <button mat-button color="primary">
       About
     </button>
     <button mat-button color="primary">
@@ -43,6 +52,5 @@
     <button mat-button color="primary">
       Contact
     </button>
-  </div>
-
+  </nav>
 </header>

@@ -1,7 +1,7 @@
-<div gdAreas="header | content | footer" gdRows="auto auto auto">
+<div gdAreas="header | main | footer" gdRows="auto auto auto">
   <app-header gdArea="header"></app-header>
-  <section gdArea="content" [@routeAnimations]="routeAnimation(outlet)">
+  <main gdArea="main" [@routeAnimations]="routeAnimation(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
-  </section>
+  </main>
   <app-footer gdArea="footer"></app-footer>
 </div>
